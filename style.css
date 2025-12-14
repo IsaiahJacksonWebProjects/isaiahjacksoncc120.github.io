@@ -1,1 +1,73 @@
+/* ------------------------------
+   Fade-in animation for header
+--------------------------------*/
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ------------------------------
+   Dark mode styles
+--------------------------------*/
+.dark-mode {
+  background-color: #121212; /* dark background */
+  color: white;              /* text color */
+}
+
+.dark-mode a {
+  color: #bb86fc; /* links in dark mode */
+}
+
+.dark-mode ul li {
+  color: white;
+}
+
+/* ------------------------------
+   Layout helpers
+--------------------------------*/
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+/* ------------------------------
+   Headings and text
+--------------------------------*/
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* ------------------------------
+   Button styling
+--------------------------------*/
+#toggleBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* ------------------------------
+   Optional: container spacing
+--------------------------------*/
+.container {
+  max-width: 800px;
+}
 
