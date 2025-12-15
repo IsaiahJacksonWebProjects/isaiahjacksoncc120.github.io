@@ -10,28 +10,32 @@
 <body class="container py-4">
 
   <!-- Header -->
-  <header class="text-center mb-5 section-box">
+  <header class="text-center mb-4 section-box">
     <h1>Cart</h1>
   </header>
 
   <!-- Navigation -->
-  <nav class="d-flex justify-content-between align-items-center mb-4">
+  <nav class="d-flex justify-content-center gap-2 mb-4">
     <a href="index.html" class="btn btn-outline-dark">Home</a>
-    <div>
-      <a href="snacks.html" class="btn btn-outline-dark me-2">High-Protein Snacks</a>
-      <a href="account.html" class="btn btn-outline-dark me-2">Account</a>
-      <a href="faq.html" class="btn btn-outline-dark">FAQ</a>
-    </div>
+    <a href="snacks.html" class="btn btn-outline-dark">High-Protein Snacks</a>
+    <a href="account.html" class="btn btn-outline-dark">Account</a>
+    <a href="faq.html" class="btn btn-outline-dark">FAQ</a>
   </nav>
 
   <!-- Cart Section -->
   <section class="section-box">
     <h2>Your Cart</h2>
-    <p>No items in your cart yet!</p>
+    <p>Your selected items will appear here.</p>
+    <ul>
+      <li>Triple Milk Protein Cake - $12.99</li>
+      <li>Protein Brownie Bites - $9.99</li>
+      <li>Peanut Butter Protein Cups - $8.99</li>
+    </ul>
+    <button class="btn btn-success">Proceed to Checkout</button>
   </section>
 
-  <!-- Dark mode button fixed bottom-right -->
-  <button id="toggleBtn" class="btn btn-primary">🌙</button>
+  <!-- Dark Mode Toggle -->
+  <button id="toggleBtn" class="btn btn-primary fixed-bottom m-3" style="width: 50px; height: 50px;">🌙</button>
   <script>
     document.getElementById("toggleBtn").onclick = function() {
       document.body.classList.toggle("dark-mode");
