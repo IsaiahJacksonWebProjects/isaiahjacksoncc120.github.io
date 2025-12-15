@@ -10,11 +10,11 @@
 <body class="container py-4">
 
   <!-- Navigation -->
-  <nav class="mb-4 d-flex align-items-center">
-    <a href="snacks.html" class="me-3">Snacks</a>
-    <a href="account.html" class="me-3">Account</a>
-    <a href="cart.html" class="me-3">Cart</a>
-    <a href="faq.html" class="me-3">FAQ</a>
+  <nav class="mb-4">
+    <a href="snacks.html">Snacks</a>
+    <a href="account.html">Account</a>
+    <a href="cart.html">Cart</a>
+    <a href="faq.html">FAQ</a>
     <a href="index.html" class="ms-auto">MuscleMeals</a>
   </nav>
 
@@ -34,23 +34,28 @@
   <section class="section-box fade-in">
     <h2>Featured Products</h2>
     <div class="featured-products d-flex justify-content-around flex-wrap">
-      <div class="product-card" onclick="showProduct('Protein Brownie Bites')">
+
+      <div class="product-card">
         <img src="images/High-Protein-Brownie-Bites-Botanica4.jpg" alt="Protein Brownie Bites" class="product-img">
         <h3>Protein Brownie Bites</h3>
         <p>$5.99</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Protein Brownie Bites', 5.99)">Add to Cart</button>
       </div>
 
-      <div class="product-card" onclick="showProduct('Triple Milk Protein Cake')">
+      <div class="product-card">
         <img src="images/7399-tres-leches-milk-cake-ddmfs-beauty-2x1-BG-25702-f42c94b10c914753aa4dcb413658b8bf.jpg" alt="Triple Milk Protein Cake" class="product-img">
         <h3>Triple Milk Protein Cake</h3>
         <p>$5.99</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Triple Milk Protein Cake', 5.99)">Add to Cart</button>
       </div>
 
-      <div class="product-card" onclick="showProduct('Peanut Butter Protein Cups')">
+      <div class="product-card">
         <img src="images/Protein-Peanut-Butter-Cups-featured.jpg" alt="Peanut Butter Protein Cups" class="product-img">
         <h3>Peanut Butter Protein Cups</h3>
         <p>$5.99</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Peanut Butter Protein Cups', 5.99)">Add to Cart</button>
       </div>
+
     </div>
   </section>
 
@@ -63,11 +68,8 @@
   </section>
 
   <!-- Dark Mode Toggle -->
-  <div class="text-end my-3">
-    <button id="toggleBtn" class="btn btn-primary">Toggle Dark Mode</button>
-  </div>
+  <button id="toggleBtn"></button>
 
-  <!-- Scripts -->
   <script src="product.js"></script>
   <script>
     document.getElementById("toggleBtn").onclick = function () {
