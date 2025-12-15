@@ -8,10 +8,18 @@ body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
   text-decoration: none;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 /* -----------------------------
@@ -27,44 +35,24 @@ a {
 }
 
 /* -----------------------------
-   Header / Section Boxes
------------------------------ */
-.section-box {
-  padding: 20px;
-  margin-bottom: 30px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.dark-mode .section-box {
-  background-color: #1e1e1e;
-  border-color: #444;
-  color: #f0f0f0;
-}
-
-/* -----------------------------
-   Headings
------------------------------ */
-h1, h2, h3 {
-  font-family: 'Georgia', serif;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-/* -----------------------------
    Navigation
 ----------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 nav a {
-  min-width: 120px;
-  text-align: center;
+  padding: 8px 15px;
+  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  background-color: #ff4d4d; /* soft red highlight */
-  color: white !important;
+  background-color: #ff4d4d;
+  color: #fff !important;
 }
 
 /* -----------------------------
@@ -80,25 +68,38 @@ nav a:hover {
   height: 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   z-index: 999;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .dark-mode #toggleBtn {
-  background-color: #ff4d4d;
-  color: #fff;
+  background-color: #fff;
+  color: #ff4d4d;
 }
 
 /* -----------------------------
-   Product Images
+   Section Boxes
 ----------------------------- */
-img.product-img {
-  width: 150px;       /* smaller, consistent size */
-  height: 150px;
-  object-fit: cover;
+.section-box {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .section-box {
+  background-color: #1e1e1e;
+  border-color: #444;
+  color: #f0f0f0;
 }
 
 /* -----------------------------
-   Featured Products / Flex Layout
+   Featured Products
 ----------------------------- */
 .featured-products {
   display: flex;
@@ -108,13 +109,20 @@ img.product-img {
 }
 
 .featured-products .product-card {
-  width: 180px;       /* smaller than before */
+  width: 180px;
   padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.featured-products .product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .dark-mode .featured-products .product-card {
@@ -122,15 +130,36 @@ img.product-img {
   border-color: #444;
 }
 
+/* Product Images */
+img.product-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
 /* -----------------------------
    Forms
 ----------------------------- */
 form input, form select, form textarea {
   border-radius: 5px;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 form button {
   border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #e03f3f;
 }
 
 /* -----------------------------
@@ -148,6 +177,18 @@ footer, .info-section {
 }
 
 /* -----------------------------
+   Animations
+----------------------------- */
+.fade-in {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* -----------------------------
    Responsive
 ----------------------------- */
 @media (max-width: 768px) {
@@ -156,11 +197,12 @@ footer, .info-section {
     align-items: center;
   }
 
-  nav a {
-    min-width: 100px;
-    font-size: 0.9rem;
+  nav {
+    flex-direction: column;
+    gap: 10px;
   }
 }
+
 
 
 
