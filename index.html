@@ -9,53 +9,110 @@
 </head>
 <body>
 
-  <div class="container py-4 d-flex flex-column min-vh-100">
+  <div class="container py-4">
+
+    <!-- Header -->
+    <header class="text-center my-4 p-4 header-box">
+      <a href="index.html" class="text-decoration-none text-dark"><h1>MuscleMeals</h1></a>
+      <p>Delicious protein-packed desserts</p>
+    </header>
 
     <!-- Navigation -->
-    <nav class="mb-4">
-      <a href="index.html" class="me-3">Home</a>
-      <a href="about.html">About Us</a>
+    <nav class="mb-4 text-center">
+      <a href="snacks.html" class="me-3">Snacks & Desserts</a>
+      <a href="about.html" class="me-3">About</a>
+      <a href="contact.html" class="me-3">Contact</a>
+      <a href="cart.html">Cart</a>
     </nav>
 
-    <div class="content flex-grow-1">
+    <!-- Mission Section -->
+    <section class="card p-3 mb-4">
+      <h2>Our Mission</h2>
+      <p>We create high-protein desserts that taste amazing while helping you meet your fitness goals.</p>
+    </section>
 
-      <!-- Header / Hero -->
-      <h1 class="fade-in">MuscleMeals</h1>
-      <p>Delicious protein-packed desserts for fitness enthusiasts.</p>
+    <!-- Featured Products -->
+    <section>
+      <h2 class="mb-3">Featured Snacks</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Protein Brownie Bites">
+            <div class="card-body">
+              <h5 class="card-title">Protein Brownie Bites</h5>
+              <p class="card-text">$4.99</p>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Triple Milk Protein Cake">
+            <div class="card-body">
+              <h5 class="card-title">Triple Milk Protein Cake</h5>
+              <p class="card-text">$9.99</p>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Peanut Butter Protein Cups">
+            <div class="card-body">
+              <h5 class="card-title">Peanut Butter Protein Cups</h5>
+              <p class="card-text">$5.99</p>
+              <a href="cart.html" class="btn btn-primary btn-sm">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 text-center"><em>Full 3-course meals coming soon!</em></p>
+    </section>
 
-      <!-- About / Mission Section -->
-      <section>
-        <h2>Our Mission</h2>
-        <p>We create high-protein desserts that taste amazing while helping you meet your fitness goals.</p>
-      </section>
-
-      <!-- Products Preview -->
-      <section>
-        <h2>Our Products</h2>
-        <ul>
-          <li>Protein Brownie Bites</li>
-          <li>Triple Milk Protein Cake</li>
-          <li>Peanut Butter Protein Cups</li>
-        </ul>
-      </section>
-
-    </div>
-
-    <!-- Dark mode button at the bottom -->
-    <div class="text-center my-3">
-      <button id="toggleBtn" class="btn btn-primary">Toggle Dark Mode</button>
-    </div>
+    <!-- Footer / Info Links -->
+    <footer class="mt-5">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>HELP</h6>
+          <ul class="list-unstyled">
+            <li>FAQs</li>
+            <li>Returns & Exchanges</li>
+            <li>Contact Us</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>SHOP</h6>
+          <ul class="list-unstyled">
+            <li>All Products</li>
+            <li>Gift Cards</li>
+            <li>Rewards</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>EXPLORE</h6>
+          <ul class="list-unstyled">
+            <li>Our Story</li>
+            <li>Customer Reviews</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>JOIN</h6>
+          <p>Sign up for updates and exclusive deals:</p>
+          <input type="email" class="form-control mb-2" placeholder="Enter your email">
+          <button class="btn btn-primary btn-sm">Subscribe</button>
+        </div>
+      </div>
+    </footer>
 
   </div>
 
-  <!-- Embedded JavaScript -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("toggleBtn").onclick = function () {
-        document.body.classList.toggle("dark-mode");
-      };
-    });
-  </script>
+  <!-- Dark Mode Button -->
+  <button id="toggleBtn" class="btn btn-primary btn-sm">Toggle Dark Mode</button>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
 
