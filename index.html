@@ -1,108 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MuscleMeals</title>
+  <meta charset="UTF-8">
+  <title>MuscleMeals | High-Protein Desserts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- HEADER -->
-  <header class="header-box text-center">
-    <h1>
-      <a href="index.html">MuscleMeals</a>
-    </h1>
-    <p>High-Protein Desserts Built for Performance</p>
-  </header>
+<!-- ===== HEADER / NAV ===== -->
+<header class="site-header">
+  <nav class="nav-bar">
 
-  <!-- MISSION -->
-  <section class="section-box">
-    <h2>Our Mission</h2>
-    <p>
-      We create high-protein snacks that taste like real desserts while supporting
-      strength, recovery, and everyday fitness goals.
-    </p>
-    <p><strong>Full 3-course meals coming soon.</strong></p>
-  </section>
-
-  <!-- FEATURED PRODUCTS -->
-  <section class="section-box">
-    <h2>Featured Products</h2>
-
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="High-Protein-Brownie-Bites-Botanica4.jpg" alt="Protein Brownie Bites">
-          <h3>Protein Brownie Bites</h3>
-          <p>$6.99</p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="7399-tres-leches-milk-cake-ddmfs-beauty-2x1-BG-25702-f42c94b10c914753aa4dcb413658b8bf.jpg" alt="Triple Milk Protein Cake">
-          <h3>Triple Milk Protein Cake</h3>
-          <p>$8.99</p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="product-card">
-          <img src="Protein-Peanut-Butter-Cups-featured.jpg" alt="Protein Peanut Butter Cups">
-          <h3>Peanut Butter Protein Cups</h3>
-          <p>$5.99</p>
-          <a href="#" class="btn btn-dark">Add to Cart</a>
-        </div>
-      </div>
+    <!-- Left -->
+    <div class="nav-left">
+      <a href="snacks.html" class="nav-link">Snacks</a>
     </div>
-  </section>
 
-  <!-- ABOUT -->
-  <section class="section-box">
-    <h2>About</h2>
-    <p>
-      MuscleMeals was created to bridge the gap between nutrition and enjoyment.
-      No chalky bars. No boring macros. Just real desserts made smarter.
-    </p>
-  </section>
+    <!-- Center -->
+    <div class="nav-center">
+      <a href="index.html" class="logo">MuscleMeals</a>
+    </div>
 
-  <!-- CONTACT -->
-  <section class="section-box">
-    <h2>Contact</h2>
-    <p><strong>Name:</strong> Isaiah Jackson</p>
-    <p><strong>Email:</strong> isaiah30@ksu.edu</p>
-    <p><strong>Phone:</strong> (555) 867-5309</p>
-  </section>
+    <!-- Right -->
+    <div class="nav-right">
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="account.html" class="nav-link">Account</a>
+      <a href="cart.html" class="nav-link">Cart</a>
+    </div>
 
-  <!-- FOOTER -->
-  <footer class="footer-box">
-    <p>© 2025 MuscleMeals. All rights reserved.</p>
-  </footer>
+  </nav>
+</header>
 
-  <!-- DARK MODE BUTTON -->
-  <button id="toggleBtn" class="dark-toggle">🌙</button>
+<!-- ===== HERO / MISSION ===== -->
+<section class="section-box">
+  <h1>Fuel Your Goals</h1>
+  <p>
+    MuscleMeals creates high-protein desserts that support performance,
+    recovery, and balance — without sacrificing taste.
+  </p>
+  <p><strong>Full 3-course meals coming soon.</strong></p>
+</section>
 
-  <!-- JS -->
-  <script>
-    document.getElementById("toggleBtn").onclick = function () {
-      document.body.classList.toggle("dark-mode");
-    };
-  </script>
+<!-- ===== FEATURED PRODUCTS ===== -->
+<section class="section-box">
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="High-Protein-Brownie-Bites-Botanica4.jpg" alt="Protein Brownie Bites">
+      <h3>Protein Brownie Bites</h3>
+      <p>$4.99</p>
+      <a href="cart.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="7399-tres-leches-milk-cake-ddmfs-beauty-2x1-BG-25702-f42c94b10c914753aa4dcb413658b8bf.jpg" alt="Triple Milk Protein Cake">
+      <h3>Triple Milk Protein Cake</h3>
+      <p>$6.99</p>
+      <a href="cart.html" class="btn">Add to Cart</a>
+    </div>
+
+    <div class="product-card">
+      <img src="Protein-Peanut-Butter-Cups-featured.jpg" alt="Protein Peanut Butter Cups">
+      <h3>Peanut Butter Protein Cups</h3>
+      <p>$5.49</p>
+      <a href="cart.html" class="btn">Add to Cart</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section-box">
+  <h2>About MuscleMeals</h2>
+  <p>
+    MuscleMeals was built for athletes, lifters, and everyday people who want
+    better nutrition without boring food. Every product is designed with
+    protein intake, quality ingredients, and flavor in mind.
+  </p>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section-box">
+  <h2>Contact Us</h2>
+  <p><strong>Name:</strong> Isaiah Jackson</p>
+  <p><strong>Email:</strong> isaiah30@ksu.edu</p>
+  <p><strong>Phone:</strong> (555) 123-4567</p>
+</section>
+
+<!-- ===== DARK MODE BUTTON ===== -->
+<button id="toggleBtn" class="dark-toggle">🌙</button>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p>© 2025 MuscleMeals • Built for performance</p>
+</footer>
+
+<!-- ===== JS ===== -->
+<script>
+  document.getElementById("toggleBtn").onclick = function () {
+    document.body.classList.toggle("dark-mode");
+  };
+</script>
 
 </body>
 </html>
+
 
 
 
