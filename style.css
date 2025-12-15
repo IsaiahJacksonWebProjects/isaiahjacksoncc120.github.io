@@ -91,21 +91,10 @@ nav a:hover {
    Product Images
 ----------------------------- */
 img.product-img {
-  width: 200px;
-  height: 200px;
+  width: 150px;       /* smaller, consistent size */
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
-}
-
-/* -----------------------------
-   Forms
------------------------------ */
-form input, form select, form textarea {
-  border-radius: 5px;
-}
-
-form button {
-  border-radius: 5px;
 }
 
 /* -----------------------------
@@ -119,18 +108,29 @@ form button {
 }
 
 .featured-products .product-card {
+  width: 180px;       /* smaller than before */
+  padding: 10px;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 10px;
   background-color: #fff;
-  width: 220px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .dark-mode .featured-products .product-card {
   background-color: #1e1e1e;
   border-color: #444;
+}
+
+/* -----------------------------
+   Forms
+----------------------------- */
+form input, form select, form textarea {
+  border-radius: 5px;
+}
+
+form button {
+  border-radius: 5px;
 }
 
 /* -----------------------------
@@ -161,6 +161,7 @@ footer, .info-section {
     font-size: 0.9rem;
   }
 }
+
 
 
 
