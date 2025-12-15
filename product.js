@@ -1,4 +1,4 @@
-// Define product details
+
 const products = {
   "Protein Brownie Bites": {
     img: "images/High-Protein-Brownie-Bites-Botanica4.jpg",
@@ -32,7 +32,7 @@ const products = {
   }
 };
 
-// Create modal element
+
 const modal = document.createElement("div");
 modal.id = "productModal";
 modal.style.display = "none";
@@ -56,7 +56,7 @@ modal.innerHTML = `
 `;
 document.body.appendChild(modal);
 
-// Show product function
+
 function showProduct(name) {
   const product = products[name];
   if (product) {
@@ -69,12 +69,12 @@ function showProduct(name) {
   }
 }
 
-// Close modal
+
 document.getElementById("closeModal").onclick = () => {
   modal.style.display = "none";
 };
 
-// Close modal when clicking outside
+
 window.onclick = (e) => {
   if (e.target == modal) modal.style.display = "none";
 };
