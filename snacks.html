@@ -10,76 +10,43 @@
 <body class="container py-4">
 
   <!-- Navigation -->
-  <nav class="mb-4 d-flex align-items-center">
-    <a href="index.html" class="me-3">Home</a>
-    <a href="account.html" class="me-3">Account</a>
-    <a href="cart.html" class="me-3">Cart</a>
-    <a href="faq.html" class="me-3">FAQ</a>
+  <nav class="mb-4">
+    <a href="index.html">Home</a>
+    <a href="account.html">Account</a>
+    <a href="cart.html">Cart</a>
+    <a href="faq.html">FAQ</a>
     <a href="snacks.html" class="ms-auto">Snacks</a>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="section-box text-center fade-in">
-    <h1>Snacks</h1>
-    <p>High-protein treats to fuel your workouts!</p>
-  </section>
-
-  <!-- Featured Snacks -->
   <section class="section-box fade-in">
-    <h2>Featured Snacks</h2>
+    <h2>Snacks</h2>
     <div class="featured-products d-flex justify-content-around flex-wrap">
 
-      <div class="product-card" onclick="showProduct('Protein Brownie Bites')">
-        <img src="images/High-Protein-Brownie-Bites-Botanica4.jpg" alt="Protein Brownie Bites" class="product-img">
-        <h3>Protein Brownie Bites</h3>
-        <p>$5.99</p>
-      </div>
-
-      <div class="product-card" onclick="showProduct('Triple Milk Protein Cake')">
-        <img src="images/7399-tres-leches-milk-cake-ddmfs-beauty-2x1-BG-25702-f42c94b10c914753aa4dcb413658b8bf.jpg" alt="Triple Milk Protein Cake" class="product-img">
-        <h3>Triple Milk Protein Cake</h3>
-        <p>$5.99</p>
-      </div>
-
-      <div class="product-card" onclick="showProduct('Peanut Butter Protein Cups')">
-        <img src="images/Protein-Peanut-Butter-Cups-featured.jpg" alt="Peanut Butter Protein Cups" class="product-img">
-        <h3>Peanut Butter Protein Cups</h3>
-        <p>$5.99</p>
-      </div>
-
-      <div class="product-card" onclick="showProduct('Protein Cinnamon Rolls')">
+      <div class="product-card">
         <img src="images/Protein-Cinnamon-Rolls-05.jpg" alt="Protein Cinnamon Rolls" class="product-img">
         <h3>Protein Cinnamon Rolls</h3>
         <p>$5.99</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Protein Cinnamon Rolls', 5.99)">Add to Cart</button>
       </div>
 
-      <div class="product-card" onclick="showProduct('Protein Bars')">
+      <div class="product-card">
         <img src="images/protein-bars-recipe.jpg" alt="Protein Bars" class="product-img">
         <h3>Protein Bars</h3>
         <p>$5.99</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Protein Bars', 5.99)">Add to Cart</button>
       </div>
 
-      <div class="product-card" onclick="showProduct('Protein Cheesecake')">
+      <div class="product-card">
         <img src="images/protein-cheesecake-recipe.jpg" alt="Protein Cheesecake" class="product-img">
         <h3>Protein Cheesecake</h3>
         <p>$5.99</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Protein Cheesecake', 5.99)">Add to Cart</button>
       </div>
 
     </div>
   </section>
 
-  <!-- Dark Mode Toggle -->
-  <div class="text-end my-3">
-    <button id="toggleBtn" class="btn btn-primary">Toggle Dark Mode</button>
-  </div>
-
-  <!-- Scripts -->
   <script src="product.js"></script>
-  <script>
-    document.getElementById("toggleBtn").onclick = function () {
-      document.body.classList.toggle("dark-mode");
-    };
-  </script>
 
 </body>
 </html>
