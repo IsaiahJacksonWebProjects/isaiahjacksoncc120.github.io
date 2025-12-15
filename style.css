@@ -1,14 +1,14 @@
 /* === GENERAL BODY STYLING === */
 body {
-  background-color: white;       /* main background */
-  color: black;                  /* default text color */
-  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  font-family: 'Roboto Slab', serif; /* Fancy font */
 }
 
 /* === HEADER BOX === */
 .header-box {
-  background-color: red;         /* bold red header */
-  color: white;                  /* text in white */
+  background-color: red;
+  color: white;
   border-radius: 10px;
   padding: 30px 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
@@ -49,13 +49,11 @@ nav a:hover {
   transform: scale(1.03);
 }
 
-/* Mission section styling */
 section.card {
   background-color: #f8f8f8;
   padding: 20px;
 }
 
-/* Featured Products cards */
 .card h5 {
   color: black;
 }
@@ -65,7 +63,7 @@ section.card {
   color: red;
 }
 
-/* Buttons */
+/* === BUTTONS === */
 .btn-primary {
   background-color: red;
   border: none;
@@ -92,7 +90,6 @@ footer ul li {
   margin-bottom: 0.3rem;
 }
 
-/* Newsletter input */
 footer input[type="email"] {
   margin-bottom: 5px;
   border-radius: 5px;
@@ -100,18 +97,19 @@ footer input[type="email"] {
 }
 
 /* === DARK MODE === */
-body.dark-mode {
-  background-color: black;
-  color: white;
+body.dark-mode,
+body.dark-mode .container {
+  background-color: black !important;
+  color: white !important;
 }
 
 body.dark-mode a {
-  color: red;
+  color: red !important;
 }
 
 body.dark-mode .card {
-  background-color: #222;
-  color: white;
+  background-color: #222 !important;
+  color: white !important;
 }
 
 /* === DARK MODE BUTTON === */
@@ -128,9 +126,5 @@ body.dark-mode .card {
 
 #toggleBtn:hover {
   background-color: darkred;
-}
-
-footer ul li {
-  margin-bottom: 0.3rem;
 }
 
