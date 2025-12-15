@@ -1,33 +1,120 @@
-/* Header Box */
-.header-box {
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+/* === GENERAL BODY STYLING === */
+body {
+  background-color: white;       /* main background */
+  color: black;                  /* default text color */
+  font-family: Arial, sans-serif;
 }
 
-/* Cards / Products */
+/* === HEADER BOX === */
+.header-box {
+  background-color: red;         /* bold red header */
+  color: white;                  /* text in white */
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* Header link styling */
+.header-box a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-box a:hover {
+  text-decoration: underline;
+}
+
+/* === NAVIGATION LINKS === */
+nav a {
+  color: red;
+  font-weight: bold;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+}
+
+/* === CARDS / SECTIONS === */
 .card {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  transition: transform 0.2s;
 }
 
-/* Dark Mode */
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Mission section styling */
+section.card {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* Featured Products cards */
+.card h5 {
+  color: black;
+}
+
+.card-text {
+  font-weight: bold;
+  color: red;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: red;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: darkred;
+}
+
+/* === FOOTER === */
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid red;
+}
+
+footer h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+footer ul li {
+  margin-bottom: 0.3rem;
+}
+
+/* Newsletter input */
+footer input[type="email"] {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* === DARK MODE === */
 body.dark-mode {
-  background-color: #121212;
+  background-color: black;
   color: white;
 }
 
 body.dark-mode a {
-  color: #bb86fc;
+  color: red;
 }
 
 body.dark-mode .card {
-  background-color: #1e1e1e;
+  background-color: #222;
   color: white;
 }
 
-/* Dark Mode Button Bottom Right */
+/* === DARK MODE BUTTON === */
 #toggleBtn {
   position: fixed;
   bottom: 20px;
@@ -35,12 +122,12 @@ body.dark-mode .card {
   padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
   z-index: 1000;
+  background-color: red;
+  border: none;
 }
 
-/* Footer */
-footer h6 {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+#toggleBtn:hover {
+  background-color: darkred;
 }
 
 footer ul li {
