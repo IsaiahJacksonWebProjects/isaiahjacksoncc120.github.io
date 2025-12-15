@@ -1,77 +1,49 @@
-/* ------------------------------
-   Fade-in animation for header
---------------------------------*/
-.fade-in {
-  animation: fadeIn 2s ease-in;
+/* Header Box */
+.header-box {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Cards / Products */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* ------------------------------
-   Dark mode styles
---------------------------------*/
+/* Dark Mode */
 body.dark-mode {
-  background-color: #121212; /* dark background */
-  color: white;              /* text color */
-}
-
-body.dark-mode a {
-  color: #bb86fc; /* links in dark mode */
-}
-
-body.dark-mode ul li {
+  background-color: #121212;
   color: white;
 }
 
-/* ------------------------------
-   Layout helpers
---------------------------------*/
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body.dark-mode a {
+  color: #bb86fc;
 }
 
-.content {
-  flex: 1;
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: white;
 }
 
-/* ------------------------------
-   Headings and text
---------------------------------*/
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-h2 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-/* ------------------------------
-   Button styling
---------------------------------*/
+/* Dark Mode Button Bottom Right */
 #toggleBtn {
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   padding: 0.3rem 6rem;
-   font-size: 0.8rem;
-   z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  z-index: 1000;
 }
 
-/* ------------------------------
-   Optional: container spacing
---------------------------------*/
-.container {
-  max-width: 800px;
+/* Footer */
+footer h6 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+footer ul li {
+  margin-bottom: 0.3rem;
 }
 
